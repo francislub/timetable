@@ -200,7 +200,7 @@
               <li class="nav-item">
                 <a href="<?= $site_url ?>admin/sections.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Sections</p>
+                  <p>Streems</p>
                 </a>
               </li>
               <li class="nav-item">

@@ -36,7 +36,7 @@
                 <div class="card-body">
                     <strong>Name: </strong> <?php echo get_users(array('id' => $std_id))[0]->name ?> <br>
                     <strong>Class: </strong> <?php echo $usermeta['class'] ?>
-
+                    
                 </div>
             </div>
             <div class="card">

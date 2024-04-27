@@ -69,6 +69,7 @@ if(isset($_POST['submit']))
                         <th>Title</th>
                         <th>From</th>
                         <th>To</th>
+                        <th>Actions</th>
                       </tr>
                     </thead>
 

@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
                 <tr>
                   <th>S.No</th>
                   <th>Name</th>
-                  <th>section</th>
+                  <th>Streems</th>
                   <th>Date</th>
                   <th>Action</th>
                 </tr>

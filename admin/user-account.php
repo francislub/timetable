@@ -99,15 +99,23 @@ i.fas.fa-circle-notch.fa-spin {
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <div class="form-group">
-                      <label for="">Mobile</label>
-                      <input type="text" class="form-control" placeholder="Mobile" name="mobile">
-                    </div>
+                    <label for="section">Select Gender</label>
+                      <select require name="section" id="gender" class="form-control">
+                        <option value="">-Select Gender-</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others</option>
+                      </select>
                   </div>
                   <div class="col-lg-4">
                     <div class="form-group">
-                      <label for="">Email</label>
-                      <input type="email" required class="form-control" placeholder="Email Address" name="email">
+                      <label for="section">Select Nationality</label>
+                      <select require name="section" id="nationality" class="form-control">
+                        <option value="">-Select Nationality-</option>
+                        <option value="ugandan">Ugandan</option>
+                        <option value="kenyan">Kenyan</option>
+                        <option value="other">Others</option>
+                      </select>
                     </div>
                   </div>
 
@@ -120,11 +128,11 @@ i.fas.fa-circle-notch.fa-spin {
                   </div>
                   <div class="col-lg-4">
                     <div class="form-group">
-                      <label for="">Country</label>
-                      <input type="text" class="form-control" placeholder="Country" name="country">
+                      <label for="">Student's Photo</label>
+                      <!-- <input type="text" class="form-control" placeholder="Country" name="country"> -->
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <!-- <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">State</label>
                       <input type="text" class="form-control" placeholder="State" name="state">
@@ -135,7 +143,7 @@ i.fas.fa-circle-notch.fa-spin {
                       <label for="">Pin/Zip Code</label>
                       <input type="text" class="form-control" placeholder="Pin/Zip Code" name="zip">
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </fieldset>
 
@@ -179,7 +187,7 @@ i.fas.fa-circle-notch.fa-spin {
                       <input type="text" class="form-control" placeholder="Country" name="parents_country">
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <!-- <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">State</label>
                       <input type="text" class="form-control" placeholder="State" name="parents_state">
@@ -190,13 +198,13 @@ i.fas.fa-circle-notch.fa-spin {
                       <label for="">Pin/Zip Code</label>
                       <input type="text" class="form-control" placeholder="Pin/Zip Code" name="parents_zip">
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </fieldset>
 
-              <fieldset class="border border-secondary p-3 form-group">
-                <legend class="d-inline w-auto h6">Last Qualification</legend>
-                <div class="row">
+              <!-- <fieldset class="border border-secondary p-3 form-group">
+                <legend class="d-inline w-auto h6">Last Qualification</legend> -->
+                <!-- <div class="row">
 
                   <div class="col-lg-12">
                     <div class="form-group">
@@ -221,8 +229,8 @@ i.fas.fa-circle-notch.fa-spin {
                       <label for="">Total Marks</label>
                       <input type="text" class="form-control" placeholder="Total Marks" name="total_marks">
                     </div>
-                  </div>
-                  <div class="col-lg">
+                  </div> -->
+                  <!-- <div class="col-lg">
                     <div class="form-group">
                       <label for="">Obtain Marks</label>
                       <input type="text" class="form-control" placeholder="Obtain Marks" name="obtain_mark">
@@ -234,8 +242,8 @@ i.fas.fa-circle-notch.fa-spin {
                       <input type="text" class="form-control" placeholder="Percentage" name="previous_percentage">
                     </div>
                   </div>
-                </div>
-              </fieldset>
+                </div> -->
+              <!-- </fieldset> -->
 
               <fieldset class="border border-secondary p-3 form-group">
                 <legend class="d-inline w-auto h6">Admission Details</legend>
@@ -262,16 +270,20 @@ i.fas.fa-circle-notch.fa-spin {
                   </div>
                   <div class="col-lg">
                     <div class="form-group" id="section-container">
-                      <label for="section">Select Section</label>
+                      <label for="section">Select Streem</label>
                       <select require name="section" id="section" class="form-control">
-                        <option value="">-Select Section-</option>
+                        <option value="">-Select Streem-</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-lg">
                     <div class="form-group">
-                      <label for="">Subject Streem</label>
-                      <input type="text" class="form-control" placeholder="Subject Streem" name="subject_streem">
+                      <label for="status">Select Status</label>
+                      <select require name="status" id="status" class="form-control">
+                        <option value="">-Select Status-</option>
+                        <option value="day">Day</option>
+                        <option value="border">Border</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-lg">
@@ -375,7 +387,7 @@ i.fas.fa-circle-notch.fa-spin {
 
       jQuery.ajax({
         type: "post",
-        url: "http://localhost/sms-project/actions/student-registration.php",
+        url: "http://localhost/timetable/actions/student-registration.php",
         data: formdata,
         dataType: 'json',
         beforeSend: function() {

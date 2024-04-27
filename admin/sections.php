@@ -18,12 +18,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Manage Sections</h1>
+            <h1 class="m-0 text-dark">Manage Streems</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Admin</a></li>
-              <li class="breadcrumb-item active">Sections</li>
+              <li class="breadcrumb-item active">Streems</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -40,7 +40,7 @@
             <div class="card">
               <div class="card-header py-2">
                 <h3 class="card-title">
-                  Sections
+                Streems
                 </h3>
                 <div class="card-tools">
                 </div>
@@ -68,7 +68,11 @@
                       <tr>
                         <td><?=$count++?></td>
                         <td><?=$section->title?></td>
-                        <td></td>
+                        <td>
+                        <?php
+                        //  echo "<a href='delete/del_section.php?id=" . $count["id"] . "' onclick='return confirm(\"Are you sure you want to delete?\");'> <button class='btn btn-danger'><i class='fa fa-trash'></i> Delete</button></a>";
+                        ?>
+                         </td>
                       </tr>
 
                       <?php } ?>
@@ -87,14 +91,14 @@
             <div class="card">
               <div class="card-header py-2">
                 <h3 class="card-title">
-                  Add New Section
+                  Add New Streem
                 </h3>
               </div>
               <div class="card-body">
                 <form action="" method="POST">
                   <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" placeholder="Title" required class="form-control">
+                    <label for="title">Streem Name</label>
+                    <input type="text" name="title" placeholder="Name" required class="form-control">
                   </div>
                   
                   <button name="submit" class="btn btn-success float-right">

@@ -154,9 +154,9 @@
                             </div>
 
                             <div class="form-group" id="section-container" style="display:none">
-                                <label for="section">Select Section</label>
+                                <label for="section">Select streem</label>
                                 <select require name="section" id="section" class="form-control">
-                                    <option value="">-Select Section-</option>
+                                    <option value="">-Select streem-</option>
                                 </select>
                             </div>
 
@@ -178,9 +178,9 @@
                         <h3 class="card-title">
                         Subjects
                         </h3>
-                        <div class="card-tools">
+                        <!-- <div class="card-tools">
                             <a href="?action=add-new" class="btn btn-success btn-xs"><i class="fa fa-plus mr-2"></i>Add New</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="card-body">
                         <div class="table-responsive bg-white">

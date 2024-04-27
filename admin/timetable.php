@@ -44,13 +44,16 @@ if(isset($_POST['submit']))
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <h1 class="m-0 text-dark">Manage Time Table 
 
             <a href="?action=add" class="btn btn-success btn-sm"> Add New</a>
+            <a href="?action=add" class="btn btn-success btn-sm"> Edit</a>
+            <a href="?action=add" class="btn btn-success btn-sm"> Delete</a>
+            <a href="?action=add" class="btn btn-success btn-sm"> View All Timetable</a>
             </h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Admin</a></li>
               <li class="breadcrumb-item active">Time Table</li>

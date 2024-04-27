@@ -3,7 +3,7 @@
 
   <!--Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark default-color">
-    <a class="navbar-brand" href="#"><b>SMS</b></a>
+    <a class="navbar-brand" href="#"><b>School Management System</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
       aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
